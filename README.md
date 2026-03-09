@@ -16,6 +16,9 @@ pkg install python
 pkg install cloudflared
 
 git clone https://github.com/username/happybd-bot
-cd happybd-bot
+cd happybirthday
 
+
+
+(if there's an error 1033, try other tunnel like serveo pagekite etc., using localhost and port 5000
 pip install -r requirements.txt
