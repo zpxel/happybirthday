@@ -1,0 +1,4 @@
+[project]
+src = /storage/emulated/0/TermuxBackup/happybirthday
+scripts = main.py
+

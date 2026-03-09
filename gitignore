@@ -1,0 +1,47 @@
+# ===============================
+# Python / Cython
+# ===============================
+
+# Original Python source files
+main.py
+main.c
+main.py.bak
+
+# Cython-generated report
+main.html
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Build directories
+build/
+
+# Optional: uploads folder (may sensitive data)
+uploads/
+
+# ===============================
+# JavaScript / CSS
+# ===============================
+
+# Ignore original / unminified JS
+script.js
+script.js.bak
+scriptt.js
+scripttt.js
+
+# Ignore original CSS
+style.css
+
+# ===============================
+# HTML
+# ===============================
+
+# Ignore generated / minified / base64 HTML files
+index.b64.txt
+index.min.html
+indexx.html
+indexfinal.html
+indexxx.html
