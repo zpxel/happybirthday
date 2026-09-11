@@ -1,53 +1,22 @@
-# =========================
-# Operating System files
-# =========================
-# macOS
-.DS_Store
-
-# Windows
-Thumbs.db
-
-# Linux/Termux
-*~
-
-# =========================
-# Python / Flask
-# =========================
-__pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-*.swp
-*.sqlite3
-
-# Virtual environment
-.venv/
-env/
-ENV/
-venv/
-
-# =========================
-# Flask / Web
-# =========================
-uploads/               # kung gusto mong hindi i-upload ang uploaded files
-*.log                  # log files
-*.tmp                  # temporary files
-
-# =========================
-# Obfuscated / Build Files
-# =========================
-index.b64.txt          # kung may encode version ka na hindi kailangan sa GitHub
-indexx.html
-indexxx.html
-index.min.html
-indexfinal.html
-script.js
-style.css
-main.py
+main.c
+main.py.bak
+main_enc.py
 mainn.py
+__pycache__/
+build/
+uploads/
 
-# =========================
-# Other
-# =========================
-*.bak
-*.backup
+templates/indexx.html
+templates/indexxx.html
+templates/indexfinal.html
+templates/index.min.html
+
+static/script.js
+static/script.js.bak
+static/scriptt.js
+static/scripttt.js
+static/style.css
+
+main.py.bak
+main_enc.py
+mainn.py
